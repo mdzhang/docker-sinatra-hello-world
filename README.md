@@ -20,8 +20,8 @@
     bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
 
     cd ~/Code
-    git clone git@github.com:mdzhang/sinatra-docker-test.git
-    cd sinatra-docker-test
+    git clone git@github.com:mdzhang/docker-sinatra-hello-world.git
+    cd docker-sinatra-hello-world
     [TODO]
     ```
 
