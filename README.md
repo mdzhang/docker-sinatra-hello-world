@@ -1,5 +1,10 @@
-# Installation
-(assumes OS X)
+# docker-sinatra-hello-world
+
+A simple "Hello World" app using Docker, Sinatra, rbenv and bundler.
+
+## Installation
+
+### OS X
 
 - install [brew](http://brew.sh/#install)
 
@@ -30,22 +35,14 @@
 
 - view app
 
-    - find VM (since Docker doesn't work on OS X) ip via
+    ```
+    open http://$(docker-machine ip):4567
+    ```
 
-        ```
-        docker-machine ip # VM_ip_addr
-        ```
-
-    - navigate to
-
-        ```
-        [VM_ip_addr]:4567
-        ```
-
-### Resources
+## Resources
 
 - http://brew.sh/#install
 - https://caskroom.github.io/
-- http://sourabhbajaj.com/mac-setup/Vagrant/README.html
+- http://sourabhbajaj.com/mac-setup/Docker/README.html
 - https://docs.docker.com/engine/getstarted/step_two/
 - https://docs.docker.com/v1.10/engine/userguide/containers/dockervolumes/
