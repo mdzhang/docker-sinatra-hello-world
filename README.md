@@ -10,9 +10,8 @@
 - install software dependencies
 
     ```
-    brew tap caskroom/cask
-    brew cask install virtualbox
-    brew cask install dockertoolbox
+    brew tap homebrew/bundle
+    brew bundle
     ```
 
 - setup project
