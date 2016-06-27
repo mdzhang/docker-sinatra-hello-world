@@ -1,4 +1,5 @@
 # Installation
+(assumes OS X)
 
 - install [brew](http://brew.sh/#install)
 
@@ -17,19 +18,30 @@
 - setup project
 
     ```
+    echo 'eval "$(docker-machine env)"' >> $HOME/.bashrc
     bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
+    source  $HOME/.bashrc
 
     cd ~/Code
     git clone git@github.com:mdzhang/docker-sinatra-hello-world.git
     cd docker-sinatra-hello-world
-    [TODO]
+    docker build -t docker-sinatra-hello-world .
+    docker run -d -p 4567:4567 docker-sinatra-hello-world
     ```
 
-- view app at
+- view app
 
-    ```
-    http://localhost:4567
-    ```
+    - find VM (since Docker doesn't work on OS X) ip via
+
+        ```
+        docker-machine ip # VM_ip_addr
+        ```
+
+    - navigate to
+
+        ```
+        [VM_ip_addr]:4567
+        ```
 
 ### Resources
 
