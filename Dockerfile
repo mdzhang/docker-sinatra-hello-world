@@ -79,5 +79,5 @@ RUN rm /bin/sh && ln -s /bin/dash /bin/sh
 # This is mostly just documentation, it itself does not accomplish port forwarding
 EXPOSE 4567
 
-# Sinatra will block vagrant port-forwarding unless explicitly binded to 0.0.0.0 below
-CMD ["ruby", "myapp.rb", "-o", "0.0.0.0"]
+# Sinatra will block docker port-forwarding unless explicitly binded to 0.0.0.0 below
+CMD ["shotgun", "myapp.rb", "--port=4567", "--host=0.0.0.0"]

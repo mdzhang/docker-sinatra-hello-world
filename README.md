@@ -26,7 +26,7 @@
     git clone git@github.com:mdzhang/docker-sinatra-hello-world.git
     cd docker-sinatra-hello-world
     docker build -t docker-sinatra-hello-world .
-    docker run -d -p 4567:4567 docker-sinatra-hello-world
+    docker run -d -p 4567:4567 -v $(pwd):/docker-sinatra-hello-world docker-sinatra-hello-world
     ```
 
 - view app
@@ -49,3 +49,4 @@
 - https://caskroom.github.io/
 - http://sourabhbajaj.com/mac-setup/Vagrant/README.html
 - https://docs.docker.com/engine/getstarted/step_two/
+- https://docs.docker.com/v1.10/engine/userguide/containers/dockervolumes/
