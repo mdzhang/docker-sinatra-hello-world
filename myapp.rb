@@ -1,5 +1,9 @@
 require 'sinatra'
 
+get '/health' do
+  [200,  'OK']
+end
+
 get '/' do
-  'Hello world! (from Docker)'
+  redirect to('/health')
 end
