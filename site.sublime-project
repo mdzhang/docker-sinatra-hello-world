@@ -3,7 +3,8 @@
   [
     {
       "path": ".",
-      "folder_exclude_patterns": [".git"]
+      "folder_exclude_patterns": [".git", ".idea"],
+      "file_exclude_patterns": ["*.iml"]
     }
   ],
   "settings":

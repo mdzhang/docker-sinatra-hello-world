@@ -1,6 +1,6 @@
 .git
 .gitignore
-Makefile
 README.md
 site.sublime-project
 site.sublime-workspace
+circle.yml
